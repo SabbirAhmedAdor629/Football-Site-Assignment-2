@@ -229,6 +229,9 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
+.social-icons .fab:hover {
+  color: rgb(211, 23, 23);
+}
 
 /*---------------
   Media Quarries 

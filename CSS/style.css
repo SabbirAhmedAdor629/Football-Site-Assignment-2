@@ -1,0 +1,535 @@
+/* ------------
+ Font awesome 
+--------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+/*----------------
+   Live Matches
+----------------- */
+
+.live-matches {
+  display: flex;
+  background-color: #2d25a0;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 550px;
+}
+.heading-copa-america {
+  color: white;
+  font-size: 64px;
+  font-weight: 900;
+  padding-bottom: 16px;
+  margin-top: 25px;
+}
+.live-match {
+  width: 485px;
+}
+.live-match a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+}
+
+.live-match-banner img {
+  width: 450px;
+}
+.live-matches .live-match-banner:hover {
+  transform: matrix(-1, 0, 0, 1, 0, 0) scale(1.2, 1.2);
+  transition: transform 2s ease-in-out;
+  color: black;
+}
+
+/*-------------
+   Top Players 
+ --------------*/
+
+.top-players {
+  display: flex;
+  justify-content: space-evenly;
+}
+.players-blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-items: center;
+  margin-top: 70px;
+}
+.player-blog {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 18px;
+  width: 300px;
+  height: 426px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+.thumble img {
+  width: 100%;
+}
+.blog-title {
+  font-weight: 700;
+  color: #18191f;
+  font-size: 28px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.player-description {
+  color: #6c6c6c;
+  font-size: 16px;
+}
+
+/*------------------
+ Highlight Matches 
+ -------------------*/
+
+.heading-highlight {
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+.highlight-matches {
+  display: flex;
+  background-color: #f0eeee;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.highlight-match {
+  width: 485px;
+  margin-right: 66px;
+}
+.highlight-match a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+}
+.highlight-banner {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px black;
+}
+.highlight-match-banner img {
+  width: 550px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px black;
+  overflow: hidden;
+}
+.highlight-match-banner:hover img {
+  transform: scale(120%);
+  transition: transform 2s ease-in-out;
+  overflow: hidden;
+}
+.photo-title {
+  text-align: center;
+}
+.photo-details {
+  align-items: center;
+  display: none;
+  position: absolute;
+  width: 550px;
+  top: 2870px;
+}
+.highlight-banner:hover .photo-details {
+  display: block;
+  background-color: rgba(245, 243, 239, 0.315);
+  color: rgb(189, 16, 16);
+  font-weight: 700;
+  text-align: justify;
+}
+
+/*------------------------
+   Final Match Highlight
+------------------------- */
+.heading-highlight {
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+.Final-matches {
+  display: flex;
+  background-color: #f0eeee;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.Final-match {
+  width: 485px;
+  margin-right: 66px;
+}
+.Final-match a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+}
+.Final-banner {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px black;
+}
+.Final-match-banner iframe {
+  width: 600px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px black;
+  overflow: hidden;
+}
+
+/*---------------
+   Footer Work 
+-----------------*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fab {
+  /* width: 32px;
+  height: 32px; */
+  font-size: 30px;
+  /* border: 1px solid blue;
+  background: #969bab;
+  border-radius: 16px;
+  align-items: center; */
+}
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 483.87px;
+  margin-top: 20px;
+}
+.social-icons a {
+  margin: 10px;
+}
+.footer-banner img {
+  width: 100%;
+}
+.copyright {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*---------------
+  Media Quarries 
+----------------*/
+
+/* --------------------
+  1. MObile Devices
+---------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  /*----------------
+   Live Matches
+  ----------------- */
+  .live-matches {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5%;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+  }
+  .live-match {
+    width: 50%;
+  }
+  .live-match-banner {
+    width: 50%;
+  }
+  .live-match-banner img {
+    width: 100%;
+  }
+  .heading-copa-america {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0%;
+  }
+  .live-match a {
+    width: 0.1%;
+  }
+  /*-------------
+   Top Players 
+ --------------*/
+
+  .players-blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /*------------------
+ Highlight Matches 
+ -------------------*/
+  .highlight-matches {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .highlight-match {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+  .highlight-banner {
+    width: 100%;
+  }
+  .photo-title {
+    text-align: start;
+  }
+  .photo-details {
+    width: 100%;
+    align-items: flex-start;
+    text-align: start;
+    top: 1140%;
+  }
+  /*------------------------
+   Final Match Highlight
+ ------------------------- */
+
+  .Final-matches {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .Final-match {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .Final-match-banner iframe {
+    width: 100%;
+  }
+  /*---------------
+   Footer Work 
+ -----------------*/
+  .footer-banner img {
+    width: 100%;
+  }
+}
+/*-------------------
+   2.Tablet Phone
+------------------ */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  /*----------------
+   Live Matches
+  ----------------- */
+  .live-matches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 200%;
+    background-color: blueviolet;
+    justify-content: space-evenly;
+  }
+  .live-match {
+    width: 50%;
+    margin-left: 40%;
+  }
+  .live-match-banner {
+    width: 50%;
+  }
+  .live-match-banner img {
+    width: 100%;
+  }
+  .heading-copa-america {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0%;
+  }
+  .live-match a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    background-color: #e02c6d;
+    padding: 7px 2px;
+  }
+  /*-------------
+   Top Players 
+ --------------*/
+
+  .players-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*------------------
+ Highlight Matches 
+ -------------------*/
+  .highlight-matches {
+    display: flex;
+    flex-direction: column;
+  }
+  .highlight-match {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .highlight-banner {
+    width: 60%;
+  }
+  .highlight-banner img {
+    width: 100%;
+  }
+  .photo-title {
+    text-align: start;
+  }
+  .photo-details {
+    width: 100%;
+    align-items: flex-start;
+    text-align: start;
+    top: 1140%;
+  }
+  /*------------------------
+   Final Match Highlight
+  ------------------------- */
+
+  .Final-matches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Final-match {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .Final-match-banner iframe {
+    width: 100%;
+    height: 100%;
+  }
+  /*---------------
+   Footer Work 
+  -----------------*/
+  .footer-banner img {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+  /*----------------
+   Live Matches
+  ----------------- */
+  .live-matches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 200%;
+    background-color: blueviolet;
+    justify-content: space-evenly;
+  }
+  .live-match {
+    width: 50%;
+    margin-left: 40%;
+  }
+  .live-match-banner {
+    width: 50%;
+  }
+  .live-match-banner img {
+    width: 100%;
+  }
+  .heading-copa-america {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0%;
+  }
+  .live-match a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    background-color: #e02c6d;
+    padding: 7px 2px;
+  }
+  /*-------------
+   Top Players 
+ --------------*/
+
+  .players-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*------------------
+ Highlight Matches 
+ -------------------*/
+  .highlight-matches {
+    display: flex;
+    flex-direction: column;
+  }
+  .highlight-match {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .highlight-banner {
+    width: 60%;
+  }
+  .highlight-banner img {
+    width: 100%;
+  }
+  .photo-title {
+    text-align: start;
+  }
+  .photo-details {
+    width: 100%;
+    align-items: flex-start;
+    text-align: start;
+    top: 1140%;
+  }
+  /*------------------------
+   Final Match Highlight
+  ------------------------- */
+
+  .Final-matches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Final-match {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  .Final-match-banner iframe {
+    width: 100%;
+    height: 100%;
+  }
+  /*---------------
+   Footer Work 
+-----------------*/
+  .footer-banner img {
+    width: 100%;
+  }
+}
+/*--------------
+   3.Desktop
+-------------- */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+} */
